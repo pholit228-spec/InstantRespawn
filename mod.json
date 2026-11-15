@@ -1,0 +1,29 @@
+{
+	"geode": "5.9.0",
+	"gd": {
+		"win": "*",
+		"android": "*",
+		"mac": "*",
+		"ios": "*"
+	},
+	"id": "yourname.instant-respawn",
+	"name": "Instant Respawn",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Instant respawn on death and no accidental exit with Esc.",
+	"settings": {
+		"instant-respawn": {
+			"type": "bool",
+			"name": "Instant respawn",
+			"description": "Restart the level immediately after dying (no death delay).",
+			"default": true
+		},
+		"esc-mode": {
+			"type": "string",
+			"name": "Esc in pause menu",
+			"description": "What Esc does in the pause menu. <cy>Do nothing</c> = can't exit by accident, <cy>Resume level</c> = Esc unpauses, <cy>Default</c> = vanilla behaviour.",
+			"default": "Do nothing",
+			"one-of": ["Do nothing", "Resume level", "Default"]
+		}
+	}
+}
